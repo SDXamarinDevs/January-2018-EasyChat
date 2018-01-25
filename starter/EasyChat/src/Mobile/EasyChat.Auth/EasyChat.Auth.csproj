@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Events\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="2.3.21" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.2.5" />
+    <PackageReference Include="Prism.MFractor.Config" Version="1.0.2" />
+    <PackageReference Include="Prism.Forms" Version="7.0.0.396" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyChat.Common\EasyChat.Common.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<prism:PrismApplication
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+    x:Class="EasyChat.App">
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+            <!-- TODO: Change OutlineColor to BorderColor when updating to the Xamarin Nightly Build -->
+            <Style Class="incomingMessage" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#03A9F4" />
+                <Setter Property="OutlineColor" Value="Transparent" />
+            </Style>
+            <Style Class="incomingMessage" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style Class="outgoingMessage" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#F5F5F5" />
+                <Setter Property="OutlineColor" Value="Transparent" />
+            </Style>
+            <Style Class="incomingName" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Micro" />
+            </Style>
+            <Style Class="timestamp" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize" Value="Micro" />
+            </Style>
+      </ResourceDictionary>
+    </prism:PrismApplication.Resources>
+</prism:PrismApplication>

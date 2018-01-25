@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+      x:Class="EasyChat.Controls.ColorPicker" 
+      ColumnSpacing="0" VerticalOptions="CenterAndExpand">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="38"></RowDefinition>
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="38"></ColumnDefinition>
+    <ColumnDefinition Width="38"></ColumnDefinition>
+  </Grid.ColumnDefinitions>
+  <Grid Grid.Row="0" Grid.Column="0" Padding="2" BackgroundColor="Gray" 
+        HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <BoxView x:Name="bvColorPicker"></BoxView>
+  </Grid>
+  <Image x:Name="imgColorPicker" HorizontalOptions="FillAndExpand"
+         VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+  <Picker x:Name="pickerColorPicker" IsVisible="False" Grid.ColumnSpan="2"
+          SelectedIndexChanged="pickerColorPicker_SelectedIndexChanged"/>
+</Grid>
+

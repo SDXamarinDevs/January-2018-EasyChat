@@ -1,0 +1,19 @@
+﻿{
+  "dependencies": {
+    "Prism.DryIoc.Forms": "7.0.0.396",
+    "Prism.Unity.Forms": "7.0.0.396",
+    "Xam.Plugins.Settings": "3.1.1",
+    "Xamarin.Android.Support.Design": "26.*",
+    "Xamarin.Android.Support.v4": "26.*",
+    "Xamarin.Android.Support.v7.AppCompat": "26.*",
+    "Xamarin.Android.Support.v7.CardView": "26.*",
+    "Xamarin.Android.Support.v7.MediaRouter": "26.*",
+    "Xamarin.Forms": "2.5.0.122203"
+  },
+  "frameworks": {
+    "MonoAndroid,Version=v8.0": {}
+  },
+  "runtimes": {
+    "win": {}
+  }
+}

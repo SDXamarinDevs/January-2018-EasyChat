@@ -1,0 +1,23 @@
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+          x:Class="EasyChat.Controls.IncomingMessage">
+  <Grid ColumnSpacing="2" Padding="5" x:Name="contentView">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="40" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Frame Grid.Row="0" HasShadow="False" Grid.Column="0" StyleClass="incomingMessage">
+      <Label Text="{Binding Text}"
+             StyleClass="incomingMessage" />
+    </Frame>
+    <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+      <Label Text="{Binding Name}" StyleClass="incomingName" />
+      <Label Text="{Binding MessagDateTime, StringFormat='{0:MM/dd/yyyy hh:mm tt}'}" StyleClass="timestamp" />
+    </StackLayout>
+  </Grid>
+</ViewCell>

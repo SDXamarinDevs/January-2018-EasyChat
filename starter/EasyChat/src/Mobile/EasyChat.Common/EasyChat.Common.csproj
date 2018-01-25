@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Fody" Version="2.3.21" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.2.5" />
+    <PackageReference Include="Prism.Forms" Version="7.0.0.396" />
+  </ItemGroup>
+
+</Project>
